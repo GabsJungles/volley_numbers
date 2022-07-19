@@ -3,7 +3,7 @@ import 'dart:ui';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:volley_numbers/secondpage.dart';
+import 'package:volley_numbers/pages/secondpage.dart';
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
@@ -23,10 +23,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          image: DecorationImage(
-              opacity: 90,
-              image: AssetImage("lib/images/wallpaper.final.png"),
-              fit: BoxFit.cover)),
+          gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomRight,
+              colors: <Color>[
+            Color(0xFFC0DF7C),
+            Color(0xFFC0DF7C),
+            Color(0xFFF96D4E),
+            Color(0xFFF95C39)
+          ])),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: SingleChildScrollView(
@@ -53,13 +58,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       fontSize: 50,
                       fontWeight: FontWeight.bold,
                       fontFamily: GoogleFonts.handlee().fontFamily,
-                      color: Colors.yellow,
+                      color: Colors.black,
                     ),
                     child: AnimatedTextKit(
                       animatedTexts: [
                         TypewriterAnimatedText('Volley Numbers',
                             speed: const Duration(milliseconds: 250)),
-                            
                       ],
                     ),
                   ),
@@ -68,25 +72,37 @@ class _MyHomePageState extends State<MyHomePage> {
                     padding:
                         const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                     child: TextField(
+                        cursorColor: Colors.black,
                         controller: competitionName,
-                        decoration: const InputDecoration(
+                        decoration: InputDecoration(
+                          labelStyle: TextStyle(
+                            fontSize: 18,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: GoogleFonts.handlee().fontFamily,
+                          ),
                           hintStyle: TextStyle(
-                            color: Colors.white
+                            fontSize: 18,
+                            color: Colors.black,
+                            fontWeight: FontWeight.bold,
+                            fontFamily: GoogleFonts.handlee().fontFamily,
                           ),
-                          border: OutlineInputBorder(
-                          ),
+                          border: OutlineInputBorder(),
                           hintText: 'Nome da Competição',
-                          
                         ))),
                 Padding(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                   child: TextField(
+                    cursorColor: Colors.black,
                     controller: teamA,
-                    decoration: const InputDecoration(
+                    decoration: InputDecoration(
                       hintStyle: TextStyle(
-                            color: Colors.white
-                          ),
+                        fontSize: 18,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: GoogleFonts.handlee().fontFamily,
+                      ),
                       border: OutlineInputBorder(),
                       hintText: 'Nome da Equipe/Atleta A',
                     ),
@@ -96,11 +112,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   padding:
                       const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
                   child: TextField(
+                    cursorColor: Colors.black,
                     controller: teamB,
-                    decoration: const InputDecoration(
+                    decoration: InputDecoration(
                       hintStyle: TextStyle(
-                            color: Colors.white
-                          ),
+                        fontSize: 18,
+                        color: Colors.black,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: GoogleFonts.handlee().fontFamily,
+                      ),
                       border: OutlineInputBorder(),
                       hintText: 'Nome da Equipe/Atleta B',
                     ),
@@ -112,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 IconButton(
                     icon: const Icon(Icons.task_alt_rounded),
                     iconSize: 60,
-                    color: Colors.green,
+                    color: Color(0XFFD7EBAD),
                     onPressed: () {
                       Navigator.push(
                           context,

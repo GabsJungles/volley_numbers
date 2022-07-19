@@ -46,8 +46,8 @@ class _SecondPageState extends State<SecondPage> {
     firtsTeamBlock = 0;
     firtsTeamTransition = 0;
     firtsTeamError = 0;
-
   }
+
   void resetSecondTeamPoints() {
     secondTeamService = 0;
     secondTeamScore = 0;
@@ -62,14 +62,17 @@ class _SecondPageState extends State<SecondPage> {
     return SafeArea(
         child: Container(
             decoration: const BoxDecoration(
-              
-              image: DecorationImage(
-                  image: AssetImage("lib/images/quadra.volei.final.jpeg"),
-                  opacity: 90,
-                  fit: BoxFit.cover),
-            ),
+                gradient: LinearGradient(
+                    begin: Alignment.topLeft,
+                    end: Alignment.bottomRight,
+                    colors: <Color>[
+                  Color(0xFFC0DF7C),
+                  Color(0xFFC0DF7C),
+                  Color(0xFFF96D4E),
+                  Color(0xFFF95C39)
+                ])),
             child: Scaffold(
-                backgroundColor:Colors.transparent,
+                backgroundColor: Colors.transparent,
                 body: Column(children: <Widget>[
                   const SizedBox(
                     height: 100,
@@ -78,9 +81,9 @@ class _SecondPageState extends State<SecondPage> {
                     height: 40,
                     width: 260,
                     decoration: BoxDecoration(
-                      color: const Color(0xFFEEB868),
+                      color: const Color(0xFFF7FBEF),
                       border: Border.all(
-                        color: Colors.yellow,
+                        color: Colors.black,
                         width: 3,
                       ),
                       borderRadius: BorderRadius.circular(6),
@@ -108,9 +111,9 @@ class _SecondPageState extends State<SecondPage> {
                             height: 35,
                             width: 160,
                             decoration: BoxDecoration(
-                              color: const Color(0xFFEEB868),
+                              color: const Color(0xFFF7FBEF),
                               border: Border.all(
-                                color: Colors.yellow,
+                                color: Colors.black,
                                 width: 3,
                               ),
                               borderRadius: BorderRadius.circular(6),
@@ -137,9 +140,9 @@ class _SecondPageState extends State<SecondPage> {
                             height: 35,
                             width: 160,
                             decoration: BoxDecoration(
-                              color: const Color(0xFFEEB868),
+                              color: const Color(0xFFF7FBEF),
                               border: Border.all(
-                                color: Colors.yellow,
+                                color: Colors.black,
                                 width: 3,
                               ),
                               borderRadius: BorderRadius.circular(6),
@@ -215,7 +218,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -226,7 +229,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -239,7 +242,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -250,7 +253,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -261,7 +264,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -365,7 +368,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -376,7 +379,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -389,7 +392,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -400,7 +403,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -411,7 +414,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -515,7 +518,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -526,7 +529,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -539,7 +542,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -550,7 +553,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -561,7 +564,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -650,7 +653,7 @@ class _SecondPageState extends State<SecondPage> {
                           ),
                           child: const Center(
                             child: Text(
-                              "-1",
+                              "+1",
                               style: TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold),
@@ -665,7 +668,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -676,7 +679,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -689,7 +692,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -700,7 +703,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -711,7 +714,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -815,7 +818,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -826,7 +829,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -839,7 +842,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -850,7 +853,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -861,7 +864,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -965,7 +968,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -976,7 +979,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -989,7 +992,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -1000,7 +1003,7 @@ class _SecondPageState extends State<SecondPage> {
                         decoration: BoxDecoration(
                           shape: BoxShape.rectangle,
                           border: Border.all(
-                            color: Colors.white,
+                            color: Colors.black,
                             width: 2,
                           ),
                         ),
@@ -1011,7 +1014,7 @@ class _SecondPageState extends State<SecondPage> {
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                             fontFamily: GoogleFonts.handlee().fontFamily,
-                            color: Colors.white,
+                            color: Colors.black,
                           ),
                         ),
                       ),
@@ -1062,7 +1065,7 @@ class _SecondPageState extends State<SecondPage> {
                     ],
                   ),
                   const SizedBox(
-                    height: 40,
+                    height: 20,
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -1078,14 +1081,6 @@ class _SecondPageState extends State<SecondPage> {
                         },
                       ),
                       IconButton(
-                        icon: const Icon(Icons.assignment_return_rounded),
-                        iconSize: 50,
-                        color: Colors.yellow,
-                        onPressed: () {
-                          Navigator.pop(context);
-                        },
-                      ),
-                      IconButton(
                         icon: const Icon(Icons.published_with_changes_rounded),
                         iconSize: 50,
                         color: Colors.black,
@@ -1097,6 +1092,20 @@ class _SecondPageState extends State<SecondPage> {
                       )
                     ],
                   ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      IconButton(
+                        icon: const Icon(Icons.assignment_return_rounded),
+                        iconSize: 50,
+                        color: Color(0XFFD7EBAD),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                    ],
+                  )
                 ]))));
   }
 }
